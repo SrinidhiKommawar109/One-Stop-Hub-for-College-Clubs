@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Horizontal Scroll Image Gallery</title>
+    <link rel="stylesheet" href="clubs.css">
+</head>
+<body>
+   <section>
+    <div class = "container">
+      <div class = "ticker">
+        <div class = "title"><h5>Important News</h5></div>
+        <div class = "news">
+          <marquee>
+            <p>We collected 552 units of blood,in Mega Blood donation Camp 2024,in association with Sickle Cell and the Red Cross.</p>
+          </marquee>
+        </div>
+      </div>
+    </div>
+    <button class="back-button" onclick="goBack()">BACK</button>
+    <h2><b>NSS EVENTS</b></h2>
+    <br>
+    <div class="scroll-container">
+    <img src="nss1.jpg" alt="img-1" width="400" height="300">
+    <img src="nss2.jpg" alt="img2" width="400" height="300">
+    <img src="nss3.jpg" alt="img-3" width="400" height="300">
+    <img src="nss4.jpg" alt="img-4" width="400" height="300">
+    <img src="nss5.jpg" alt="img-5" width="400" height="300">
+    <img src="nss6.jpg" alt="img-6" width="400" height="300">
+    <img src="nss7.jpg" alt="img-7" width="400" height="300">
+    </div>
+   </section>
+   
+   <section>
+    <div class = "container2">
+      <div class="apply-form">
+        <p><b>Know about NSS</b><p>
+        <p>
+        The National Service Scheme plays a vital role in shaping the personality and character of young individuals by involving them in meaningful community service. 
+      Through its diverse range of activities and events, NSS not only contributes to the welfare of society but also prepares students to be responsible and empathetic citizens. 
+      The smallest act of kindness by an NSS volunteer can indeed make a significant difference, emphasizing the power of collective effort in bringing about positive social change.
+      We aim to develop one's personality through community service. We believe the smallest act of kindness can go a long way.<br>
+      <br>
+      Events conducted by nss club are:
+        </p>
+        <p>
+          1.Health and Hygiene companies<br>
+          2.Environmental activities<br>
+          3.Educational and Literacy Programs<br>
+          4.Community Development<br>
+          5. Cultural Programs<br>
+          6.Emergency Relief Activities<br>
+          7.Celebration of Important Days<br>
+          8.Sports and Recreation<br>
+          <br>
+        </p>
+    </div>
+  </div>
+   </section>
+
+   <section class="button-section">
+    <h2>Are you interested to join in this club??</h2><br>
+    <button class="open-form-button" onclick="openForm()">Apply To This Club</button>
+    
+</section>
+
+<section class="form-section" id="application-form" style="display: none;">
+  <form action="nss_application.php" method="post">
+      <div class="form-row">
+          <div class="form-group">
+              <label for="first-name">First Name *</label>
+              <input type="text" id="first-name" name="first-name" required>
+          </div>
+          <div class="form-group">
+              <label for="middle-name">Middle Name</label>
+              <input type="text" id="middle-name" name="middle-name">
+          </div>
+          <div class="form-group">
+              <label for="last-name">Last Name *</label>
+              <input type="text" id="last-name" name="last-name" required>
+          </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group">
+              <label for="gender">Gender *</label>
+              <select id="gender" name="gender" required>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+              </select>
+          </div>
+          <div class="form-group">
+              <label for="year-level">Year Level *</label>
+              <input type="text" id="year-level" name="year-level" required>
+          </div>
+          <div class="form-group">
+              <label for="section">Section *</label>
+              <input type="text" id="section" name="section" required>
+          </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+              <label for="contact">Contact # *</label>
+              <input type="text" id="contact" name="contact" required>
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="address">Address *</label>
+          <input type="text" id="address" name="address" required>
+      </div>
+      <div class="form-group">
+          <label for="reason">Why do you want to join this club? *</label>
+          <textarea id="reason" name="reason" rows="4" required></textarea>
+      </div>
+      <div class="form-actions">
+          <button type="submit" class="submit-btn">SUBMIT APPLICATION</button>
+          <button type="reset" class="cancel-btn">CANCEL</button>
+          <button class="exit-btn" onclick="goClubs()">BACK</button>
+      </div>
+  </form>
+</section>
+
+<script>
+
+function goBack() {
+  window.history.back();
+}
+
+
+function openForm() {
+    document.getElementById('application-form').style.display = 'block';
+}
+
+function goClubs(){
+  window.location.href = "clubs.php";
+}
+</script>
+
+</body>
+</html>
