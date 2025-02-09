@@ -4,6 +4,7 @@
 The One-Stop Hub for College Clubs is a centralized web platform that brings together multiple college clubs, providing students and faculty with a single place to explore club activities, upcoming events, and recent updates. It serves as an interactive and dynamic portal for students to stay informed about campus life, join clubs, and participate in college activities.
 
 🌟 Features
+
 🔹 Multi-Club System
 Supports multiple clubs under a single platform.
 Each club gets its own dedicated page with customizable sections.
